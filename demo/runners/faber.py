@@ -5,6 +5,7 @@ import os
 import random
 import sys
 
+
 """
 From python docs:
    modules intended for use as the main module of a Python application
@@ -16,7 +17,6 @@ main entry point but the relative import of .support then breaks.
 A fix is to add  the path to the runners directory to the python path
 so that we may use it with an absolute import instead.
 e.g. from runners.support.
-
 """
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
